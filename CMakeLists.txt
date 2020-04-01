@@ -6,6 +6,6 @@ set(PROJECT untitled2)
 
 project(${PROJECT})
 
-set(SOURCES main.c)
+set(SOURCES "lab 1/main.c")
 
 add_executable(${PROJECT} ${HEADERS} ${SOURCES})
