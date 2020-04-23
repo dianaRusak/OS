@@ -12,6 +12,7 @@ int main(int argc, char *argv[]) {
 //    task1();
 //    task2();
 //    task3();
-    task7();
+//    task7();
+    task8();
     return 0;
 }
