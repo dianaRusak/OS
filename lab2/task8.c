@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <sys/wait.h>
 
 static int task8() {
     int file_descriptor[2];
@@ -16,6 +17,7 @@ static int task8() {
         write(file_descriptor[1], msg1, 5);
         close(file_descriptor[1]);
     } else {
+        wait(NULL);
         int cpid2 = fork();
         if (cpid2 == 0) {
             read(file_descriptor[0], buf, 5);

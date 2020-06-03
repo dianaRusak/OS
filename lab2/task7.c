@@ -7,9 +7,11 @@ static int task7() {
 
     if (rc == 0) // child process
     {
+        printf("child\n");
         close(STDOUT_FILENO);
         printf("print from child process\n");
     } else if (rc > 0) {
+        wait(NULL);
         printf("print from parent process\n");
     } else {
         printf("Error\n");
