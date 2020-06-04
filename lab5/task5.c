@@ -30,6 +30,6 @@ static void myls(const char *name_dir, int flag) {
 }
 
 static int task5() {
-    myls("../lab1/", 1); //../    ../lab1/
+    myls("../lab5/", 1); //../    ../lab1/
     return 0;
 }

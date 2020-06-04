@@ -15,6 +15,10 @@ static int task3(int argc, char *argv[]){
     }
 
     const char *file_name = argv[2];
+
+
+    printf("введенная команда: %d,  %s \n", n, file_name);
+
     int mode = O_RDONLY;//O_RDONLY - чтению,  O_WRONLY - записи
     file_input = open(file_name, mode);
     if (file_input == -1)
@@ -46,6 +50,8 @@ static int task3(int argc, char *argv[]){
             stack[++head] = tmp[0];
         }
     }
+
+
     while (head >= 0) {
         printf("%c", stack[head--]);
     }
